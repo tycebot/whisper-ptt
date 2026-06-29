@@ -158,7 +158,7 @@ def _deliver(text, target_hwnd):
 def _transcribe_and_deliver(frames, target_hwnd):
     try:
         audio = np.concatenate(frames, axis=0).squeeze().astype(np.float32) / 32768.0
-        segments, _ = model.transcribe(audio, beam_size=1, language='en',
+        segments, _ = model.transcribe(audio, beam_size=5, language='en',
             initial_prompt=(
                 "Python, JavaScript, TypeScript, React, Next.js, Node.js, FastAPI, Flask, Django, "
                 "pandas, NumPy, matplotlib, Jupyter, SQL, PostgreSQL, SQLite, REST API, GraphQL, "
