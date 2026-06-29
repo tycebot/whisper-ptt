@@ -1,4 +1,4 @@
-faster-whisper==1.2.1
+faster-whisper>=1.2.1
 sounddevice==0.5.5
 scipy==1.17.1
 keyboard==0.13.5
